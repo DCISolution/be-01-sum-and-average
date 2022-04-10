@@ -61,6 +61,7 @@ function average(numbers) {
 
 // BONUS
 function median(numbers) {
+  numbers = numbers.sort((a, b) => a - b)
   const length = numbers.length
   const isOdd = length % 2
   const mid = (length - isOdd) / 2
